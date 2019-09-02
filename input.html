@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- This is the CSS which is needed for it to render properly. This file is specifically for version 0.11.0 of Katex -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+  <title>Example for rendering math formulas</title>
+</head>
+<body>
+  <p>
+    Here is a math formula:
+  </p>
+  <p>
+    $$
+    \int_{-\infty}^\infty
+    \hat \xi\,e^{2 \pi i \xi x}
+    \,d\xi
+    $$
+  </p>
+  <p>
+    The following paragraph is wrong on purpose to show what an error will look like
+  </p>
+  <p>
+    $$
+    \this_will_not_work_{}
+    $$
+  </p>
+</body>
+</html>
