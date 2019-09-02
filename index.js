@@ -32,12 +32,12 @@ const renderMath = function ({ input, output } = {}) {
           // It helps Katex resolve custom macros. If you do not
           // have any macros then line 28 can just be this:
           // return katex.renderToString(str)
-          // macros: {
-          //   '\\iu': '\\mathrm{i}',
-          //   '\\eul': '\\mathrm{e}',
-          //   '\\dif': '\\mathrm{d}',
-          //   '\\cis': '\\operatorname{cis}',
-          // },
+          macros: {
+            '\\iu': '\\mathrm{i}',
+            '\\eul': '\\mathrm{e}',
+            '\\dif': '\\mathrm{d}',
+            '\\cis': '\\operatorname{cis}',
+          },
         })
       } catch (err) {
         // In case Katex had an error we color that part red
