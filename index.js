@@ -30,7 +30,7 @@ const renderMath = function ({ input, output } = {}) {
         return katex.renderToString(str, {
           // This is an example of some macros that Elio used.
           // It helps Katex resolve custom macros. If you do not
-          // have any macros then line 28 can just be this:
+          // have any macros then line 30 can just be this:
           // return katex.renderToString(str)
           macros: {
             '\\iu': '\\mathrm{i}',
